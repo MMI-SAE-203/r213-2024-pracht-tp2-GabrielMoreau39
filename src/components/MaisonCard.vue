@@ -1,3 +1,10 @@
+<script setup lang="ts">
+import type { MaisonRecord } from '@/types'
+
+const props = defineProps<MaisonRecord>()
+</script>
+
+
 <template>
     <div
   class="flex flex-col justify-start items-start flex-grow relative rounded-lg bg-white border-[1.5px] border-indigo-100"
@@ -59,7 +66,7 @@
     <p
       class="self-stretch flex-grow-0 flex-shrink-0 w-[354.67px] text-base text-left text-gray-500"
     >
-      2821 Lake Sevilla, Palm Harbor, TX
+      {{ adresse }}
     </p>
     <svg
       width="355"

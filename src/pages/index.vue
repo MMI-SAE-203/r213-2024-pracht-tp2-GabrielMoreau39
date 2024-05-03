@@ -3,55 +3,88 @@ import type { MaisonRecord } from '@/types'
 import MaisonCard from '@/components/MaisonCard.vue'
 const maisonsListe:MaisonRecord[] = 
 [
-    {
-        "adresse": "2821 Lake Sevilla, Palm Harbor, TX",
-        "collectionId": "sidpkt9hmbfwoeb",
-        "collectionName": "maison",
-        "created": "2023-05-01 14:00:54.598Z",
-        "favori": false,
-        "id": "64l3n8nar836i5j",
-        "image": "pexels_binyamin_mellish_106399_bnHdy6H03e.jpg",
-        "nbChambres": 4,
-        "nbSdb": 2,
-        "nomMaison": "Beverly Springfield",
-        "prix": 2700,
-        "surface": 45,
-        "updated": "2024-04-02 13:49:11.230Z"
-    },
-    {
-        "adresse": "2699 Green Valley, Highland Lake",
-        "collectionId": "sidpkt9hmbfwoeb",
-        "collectionName": "maison",
-        "created": "2024-04-02 13:48:47.643Z",
-        "favori": true,
-        "id": "lo831zeg10hpm9y",
-        "image": "pexels_binyamin_mellish_106399_YpoLMcQJsi.png",
-        "nbChambres": 4,
-        "nbSdb": 2,
-        "nomMaison": "Palm Harbor",
-        "prix": 2095,
-        "surface": 42,
-        "updated": "2024-04-02 13:48:47.643Z"
-    },
-    {
-        "adresse": "909 Woodland St, Michigan, IN",
-        "collectionId": "sidpkt9hmbfwoeb",
-        "collectionName": "maison",
-        "created": "2024-04-02 13:52:17.823Z",
-        "favori": false,
-        "id": "s1zuhj19x8eb242",
-        "image": "faulkner_ave_ZHz3nhmJzC.png",
-        "nbChambres": 4,
-        "nbSdb": 3,
-        "nomMaison": "Faulkner Ave",
-        "prix": 4550,
-        "surface": 80,
-        "updated": "2024-04-02 13:52:17.823Z"
-    }
+  {
+    "adresse": "6 Rue des Gueux",
+    "collectionId": "al8cjtcalaoox6q",
+    "collectionName": "maison",
+    "created": "2024-05-02 06:39:02.841Z",
+    "favori": false,
+    "id": "aryqncc017311ld",
+    "image": "0000012647_16725_undefined_1606296794299_apMOjB6nx5.webp",
+    "nbChambres": 2,
+    "nbSdb": 1,
+    "nomMaison": "Maison de gueux",
+    "prix": 50000,
+    "surface": 100,
+    "updated": "2024-05-02 06:40:06.067Z"
+  },
+  {
+    "adresse": "96 Rue de Toulouse",
+    "collectionId": "al8cjtcalaoox6q",
+    "collectionName": "maison",
+    "created": "2024-05-02 06:38:01.267Z",
+    "favori": false,
+    "id": "wbxs5rcpfhrsqfl",
+    "image": "decouvrez_les_50_plus_belles_maisons_de_vacances_en_france_dgq385Aftb.jpg",
+    "nbChambres": 4,
+    "nbSdb": 2,
+    "nomMaison": "Maison de Vacances",
+    "prix": 600000,
+    "surface": 588,
+    "updated": "2024-05-02 06:38:01.267Z"
+  },
+  {
+    "adresse": "1 Rue St André",
+    "collectionId": "al8cjtcalaoox6q",
+    "collectionName": "maison",
+    "created": "2024-05-02 06:36:40.383Z",
+    "favori": true,
+    "id": "n2jz2pqqlnwbc7o",
+    "image": "adobe_stock_55289985_1280x855_ymGBn4TIF8.webp",
+    "nbChambres": 3,
+    "nbSdb": 1,
+    "nomMaison": "Maison de Campagne",
+    "prix": 400000,
+    "surface": 500,
+    "updated": "2024-05-02 06:36:40.383Z"
+  },
+  {
+    "adresse": "1 Rue du Palais",
+    "collectionId": "al8cjtcalaoox6q",
+    "collectionName": "maison",
+    "created": "2024-05-02 06:35:34.740Z",
+    "favori": false,
+    "id": "0p8c3ycmhq3s18z",
+    "image": "31657927_29786447_Q6Vfa4bsru.jpg",
+    "nbChambres": 5,
+    "nbSdb": 6,
+    "nomMaison": "Palais",
+    "prix": 800000,
+    "surface": 1000,
+    "updated": "2024-05-02 06:35:34.740Z"
+  },
+  {
+    "adresse": "1600 Pennsylvania Ave NW, Washington, DC 20500, États-Unis",
+    "collectionId": "al8cjtcalaoox6q",
+    "collectionName": "maison",
+    "created": "2024-04-12 06:59:49.237Z",
+    "favori": true,
+    "id": "tulc0pz7aelxmmt",
+    "image": "maison_blanche_Cgb4VyPUIg.jpg",
+    "nbChambres": 18,
+    "nbSdb": 19,
+    "nomMaison": "Maison blanche",
+    "prix": 1000000000,
+    "surface": 2000,
+    "updated": "2024-04-12 06:59:49.237Z"
+  }
 ]
+
 </script>
 
 <template>
-  <h1 class="text-2xl">Bonjour monde !</h1>
-  <MaisonCard nom-maison="test de nom"/>
+  <div>
+    <h1 class="text-2xl">Bonjour monde !</h1>
+    <MaisonCard v-bind="maisonsListe[2]" />
+  </div>
 </template>
