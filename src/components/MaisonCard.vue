@@ -64,6 +64,7 @@ console.log('props : ', {...props});
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
+          :fill="favori?'red':'none'"
         ></path>
       </svg>
     </div>
@@ -76,7 +77,7 @@ console.log('props : ', {...props});
       width="355"
       height="2"
       viewBox="0 0 355 2"
-      fill="none"
+      fill="red"
       xmlns="http://www.w3.org/2000/svg"
       class="self-stretch flex-grow-0 flex-shrink-0"
       preserveAspectRatio="xMidYMid meet"
