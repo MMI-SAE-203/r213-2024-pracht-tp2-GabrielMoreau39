@@ -1,7 +1,10 @@
 <script setup lang="ts">
-import type { MaisonRecord } from '@/types'
+import { type MaisonRecord, type MaisonResponse } from '@/pocketbase-types'
+import ImgPb from './ImgPb.vue';
 
-const props = defineProps<MaisonRecord>()
+const props = defineProps<MaisonResponse<any>>()
+console.log('props : ', {...props});
+
 </script>
 
 
@@ -13,8 +16,9 @@ const props = defineProps<MaisonRecord>()
     <div
       class="w-[394.67px] h-[200px] absolute left-[-0.5px] top-[-0.5px] rounded-tl-lg rounded-tr-lg bg-gray-500"
     ></div>
-    <img
-      src="#"
+    <ImgPb
+      :record="props"
+      :filename="image"
       class="w-[394.67px] h-[235px] absolute left-[-0.5px] top-[-24.5px] object-cover"
     />
   </div>
