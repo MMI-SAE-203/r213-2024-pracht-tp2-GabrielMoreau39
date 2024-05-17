@@ -165,7 +165,7 @@ console.log('props : ', {...props});
             </clipPath>
           </defs>
         </svg>
-        <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-gray-600">2 Bathrooms</p>
+        <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-gray-600"> {{ nbSdb }} Bathrooms</p>
       </div>
       <div class="flex justify-end items-center flex-grow relative gap-2">
         <svg
