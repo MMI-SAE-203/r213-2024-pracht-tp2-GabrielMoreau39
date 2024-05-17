@@ -29,7 +29,7 @@ console.log('props : ', {...props});
       <div class="flex-grow-0 flex-shrink-0 w-[249px] h-[75px]">
         <div class="flex justify-start items-end w-[164.11px] absolute left-0 top-0 gap-0.5">
           <p class="flex-grow-0 flex-shrink-0 text-2xl font-bold text-left text-indigo-500">
-            $2,700
+            {{ prix }}
           </p>
           <p class="flex-grow-0 flex-shrink-0 w-[58px] h-8 text-base text-left text-gray-500">
             /month
@@ -38,7 +38,7 @@ console.log('props : ', {...props});
         <p
           class="w-[249px] absolute left-0 top-[43px] text-2xl font-semibold text-left text-gray-900"
         >
-          Beverly Springfield
+          {{ nomMaison}}
         </p>
       </div>
       <svg
@@ -60,7 +60,7 @@ console.log('props : ', {...props});
         ></circle>
         <path
           d="M16.9847 18.318C16.5668 18.7359 16.2353 19.232 16.0092 19.778C15.783 20.3239 15.6666 20.9091 15.6666 21.5C15.6666 22.091 15.783 22.6762 16.0092 23.2221C16.2353 23.7681 16.5668 24.2642 16.9847 24.682L24.6667 32.364L32.3487 24.682C33.1926 23.8381 33.6667 22.6935 33.6667 21.5C33.6667 20.3066 33.1926 19.162 32.3487 18.318C31.5047 17.4741 30.3601 17 29.1667 17C27.9732 17 26.8286 17.4741 25.9847 18.318L24.6667 19.636L23.3487 18.318C22.9308 17.9002 22.4347 17.5687 21.8888 17.3425C21.3428 17.1164 20.7576 17 20.1667 17C19.5757 17 18.9905 17.1164 18.4446 17.3425C17.8986 17.5687 17.4025 17.9002 16.9847 18.318V18.318Z"
-          stroke="#6366F1"
+          :stroke="favori?'red':'#6366F1'"
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
@@ -71,7 +71,7 @@ console.log('props : ', {...props});
     <p
       class="self-stretch flex-grow-0 flex-shrink-0 w-[354.67px] text-base text-left text-gray-500"
     >
-      {{ adresse }}
+      {{ adresse }} 
     </p>
     <svg
       width="355"
